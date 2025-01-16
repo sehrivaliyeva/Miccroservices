@@ -1,0 +1,17 @@
+spring:
+  application:
+   name: greet
+
+
+  config:
+    import: optional:configserver:http://localhost:9093
+    fail-fast: true
+
+server:
+  port: 8088
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh

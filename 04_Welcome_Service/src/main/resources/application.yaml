@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: Welcome-Service
+  boot:
+    admin:
+      client:
+        url: http://localhost:1111/
+
+
+    #eger eurekada 8761 portundan istifade etmeseydik manual olaraqr asagidaki qaydada register etmeli dik
+    #ancaq hal hazirda bunu etmirik
+    #eureka:
+    #client:
+    #service-url:
+  #defaultZone: http://localhost:8761/eureka
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

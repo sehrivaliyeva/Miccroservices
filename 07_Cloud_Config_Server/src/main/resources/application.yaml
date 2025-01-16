@@ -1,0 +1,16 @@
+spring:
+  application:
+   name: Config_Server
+
+
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/sehrivaliyeva/configuration-properties.git # Replace with your Git repository URL
+          default-label: main # Replace with the branch name if not `main`
+    profiles:
+      active: git
+
+server:
+  port: 9093
